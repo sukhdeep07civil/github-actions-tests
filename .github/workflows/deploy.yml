@@ -42,7 +42,7 @@ jobs:
     - name: Build Docker Image
       run: |
         docker build -t ssm0712/github-actions-tests:${{ github.sha }} .
-        docker build -t ssm0712/github-actions-tests:latest
+        docker build -t ssm0712/github-actions-tests:latest .
     
     - name: Push Docker Images
       run: |
